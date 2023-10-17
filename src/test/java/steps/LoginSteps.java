@@ -1,7 +1,9 @@
 package steps;
 
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import pages.HomePage;
 import services.DriverManager;
@@ -9,13 +11,13 @@ import services.DriverManager;
 public class LoginSteps {
     HomePage homePage = new HomePage(DriverManager.getDriver());
 
-    @When("^User login with user: '(.*)'$")
+    @When("^Completar campo username con usuario: '(.*)'$")
     public void completeWithUsername(String username) {
         System.out.println("Complete Login with user: " + username);
         homePage.sendKeysInputUsername(username);
     }
 
-    @When("^User complete with password: '(.*)'$")
+    @When("^Completar campo Password con contraseña: '(.*)'$")
     public void userCompleteWithPasswordPassword(String password) {
         System.out.println("Complete Login with password: " + password);
         homePage.sendKeysInputPassword(password);
@@ -25,4 +27,11 @@ public class LoginSteps {
     public void userClickButtonLogin() {
         homePage.clickLogin();
     }
+
+    @Then("Se muestra mensaje de validación: '(.*)'$")
+    public void seMuestraMensajeDeValidaciónMessage(String msg) {
+
+        Assert.assertEquals(msg,homePage.getDataTestError());
+    }
+
 }

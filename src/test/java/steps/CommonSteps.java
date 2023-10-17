@@ -11,7 +11,7 @@ import java.sql.Driver;
 
 public class CommonSteps {
 
-    @Given("^User navigate to: '(.*)'$")
+    @Given("^Abrir navegador en la página: '(.*)'$")
     public void openBrowser(String url){
         DriverManager.getDriver().navigate().to(url);
     }
