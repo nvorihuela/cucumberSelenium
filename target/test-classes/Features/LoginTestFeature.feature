@@ -1,6 +1,6 @@
-Feature: Test Feature
+Feature: Login Test Feature
 
-  
+  @Test
   Scenario Outline: Login OK: '<NameTestCase>'
     Given Abrir navegador en la página: 'https://www.saucedemo.com/'
     When Completar campo username con usuario: '<user>'
@@ -29,4 +29,5 @@ Feature: Test Feature
     |  Sin completar contraseña  | standard_user||     Epic sadface: Password is required   |
     |  User inexistente | user|secret_sauce|   Epic sadface: Username and password do not match any user in this service       |
     |  Password fail | standard_user|fail|   Epic sadface: Username and password do not match any user in this service         |
+    |  TEST fail | standard_user|fail|    Username and password do not match any user in this service         |
 

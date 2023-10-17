@@ -1,29 +1,13 @@
-Feature: Test Feature
+Feature: Api Test Feature
 
   @Test
-  Scenario Outline: Agregar producto al carro: '<NameTestCase>'
-    Given Abrir navegador en la página: 'https://www.saucedemo.com/'
-    And Completar campo username con usuario: '<user>'
-    And Completar campo Password con contraseña: '<password>'
-    And User click button "Login"
-    And Se visualiza pagina principal de inventario.
-    When Agregar un producto al carrito.
+  Scenario Outline: Consultar departamentos '<NameTestCase>'
+    When Consultar departamentos '<EP>'
+    Then Verificar existan departamentos
+
 
     Examples:
-      |NameTestCase  |user         | password|
-      | desde pagina principal |standard_user|secret_sauce|
+      |NameTestCase          | EP|
+      | Existen departamentos |https://www.mercadolibre.com.ar/menu/departments|
 
 
-  @Test
-  Scenario Outline: Eliminar producto del carro: '<NameTestCase>'
-    Given Abrir navegador en la página: 'https://www.saucedemo.com/'
-    And Completar campo username con usuario: '<user>'
-    And Completar campo Password con contraseña: '<password>'
-    And User click button "Login"
-    And Se visualiza pagina principal de inventario.
-    And Agregar un producto al carrito.
-    And Eliminar producto agregado.
-
-    Examples:
-      |NameTestCase  |user         | password|
-      | desde pagina principal |standard_user|secret_sauce|

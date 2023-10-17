@@ -1,6 +1,6 @@
-Feature: Test Feature
+Feature: Login Test Feature
 
-
+  @Test
   Scenario Outline: Login OK: '<NameTestCase>'
     Given Abrir navegador en la página: 'https://www.saucedemo.com/'
     When Completar campo username con usuario: '<user>'

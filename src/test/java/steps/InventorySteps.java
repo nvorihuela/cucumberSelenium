@@ -25,4 +25,16 @@ public class InventorySteps {
     public void removeProduct() {
         inventoryPage.clickElementListButtonToRemove(0);
     }
+
+    @Then("Se verifica que se elimina el producto agregado.")
+    public void verifyRemoveProduct() {
+        Assert.assertEquals("Add to cart",inventoryPage.getTextElementListButtonToAdd(0));
+        Assert.assertFalse(inventoryPage.getLinkCartBageExist());
+    }
+
+    @Then("Se verifica que se agrega el producto.")
+    public void verifyAddProduct() {
+        Assert.assertEquals("Remove",inventoryPage.getTextElementListButtonToRemove(0));
+        Assert.assertTrue(inventoryPage.getLinkCartBageExist());
+    }
 }

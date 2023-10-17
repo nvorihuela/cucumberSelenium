@@ -14,11 +14,11 @@ public class DriverManager {
     public final static int TIMEOUT = 2;
 
     public DriverManager() {
-        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +"\\Drivers\\chromedriver.exe");
-        //System.setProperty("webdriver.edge.driver", System.getProperty("user.dir") +"\\Drivers\\msedgedriver.exe");
-        //System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") +"\\Drivers\\geckodriver.exe");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +"\\src\\test\\resources\\Drivers\\chromedriver.exe");
+        //System.setProperty("webdriver.edge.driver", System.getProperty("user.dir") +"\\src\\test\\resources\\Drivers\\msedgedriver.exe");
+        //System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") +"\\src\\test\\resources\\Drivers\\geckodriver.exe");
         //driver = new FirefoxDriver();
-        System.getProperty("webdriver.chrome.driver");
+
         driver = new ChromeDriver();
         //driver = new EdgeDriver();
         new WebDriverWait(driver, Duration.ofSeconds(TIMEOUT));
