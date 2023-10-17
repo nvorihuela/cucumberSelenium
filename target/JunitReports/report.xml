@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="67.507" tests="11" skipped="0" failures="1" errors="0">
-<testcase classname="Add Products Test Feature" name="Agregar producto al carro: '&lt;NameTestCase&gt;' - Example #1.1" time="4.864">
+<testsuite name="Cucumber" time="67.119" tests="11" skipped="0" failures="1" errors="0">
+<testcase classname="Add Products Test Feature" name="Agregar producto al carro: '&lt;NameTestCase&gt;' - Example #1.1" time="5.021">
 <system-out><![CDATA[
 Given Abrir navegador en la página: 'https://www.saucedemo.com/'............passed
 And Completar campo username con usuario: 'standard_user'...................passed
@@ -11,7 +11,7 @@ When Clickear en botón 'Add to cart' de algun producto......................pas
 Then Se verifica que se agrega el producto..................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Add Products Test Feature" name="Eliminar producto del carro: '&lt;NameTestCase&gt;' - Example #1.1" time="33.087">
+<testcase classname="Add Products Test Feature" name="Eliminar producto del carro: '&lt;NameTestCase&gt;' - Example #1.1" time="33.389">
 <system-out><![CDATA[
 Given Abrir navegador en la página: 'https://www.saucedemo.com/'............passed
 And Completar campo username con usuario: 'standard_user'...................passed
@@ -23,13 +23,13 @@ When Click en botón 'Remove' del producto agregado..........................pas
 Then Se verifica que se elimina el producto agregado........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Api Test Feature" name="Consultar departamentos '&lt;NameTestCase&gt;' - Example #1.1" time="2.47">
+<testcase classname="Api Test Feature" name="Consultar departamentos '&lt;NameTestCase&gt;' - Example #1.1" time="2.773">
 <system-out><![CDATA[
 When Consultar departamentos 'https://www.mercadolibre.com.ar/menu/departments'.passed
 Then Verificar existan departamentos........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login Test Feature" name="Login OK: '&lt;NameTestCase&gt;' - Example #1.1" time="2.629">
+<testcase classname="Login Test Feature" name="Login OK: '&lt;NameTestCase&gt;' - Example #1.1" time="2.419">
 <system-out><![CDATA[
 Given Abrir navegador en la página: 'https://www.saucedemo.com/'............passed
 When Completar campo username con usuario: 'standard_user'..................passed
@@ -38,7 +38,7 @@ And User click button "Login"...............................................pass
 Then Se visualiza pagina principal de inventario............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login Test Feature" name="Login OK: '&lt;NameTestCase&gt;' - Example #1.2" time="7.87">
+<testcase classname="Login Test Feature" name="Login OK: '&lt;NameTestCase&gt;' - Example #1.2" time="7.647">
 <system-out><![CDATA[
 Given Abrir navegador en la página: 'https://www.saucedemo.com/'............passed
 When Completar campo username con usuario: 'performance_glitch_user'........passed
@@ -47,7 +47,7 @@ And User click button "Login"...............................................pass
 Then Se visualiza pagina principal de inventario............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login Test Feature" name="Login Fail: '&lt;NameTestCase&gt;' - Example #1.1" time="2.601">
+<testcase classname="Login Test Feature" name="Login Fail: '&lt;NameTestCase&gt;' - Example #1.1" time="2.75">
 <system-out><![CDATA[
 Given Abrir navegador en la página: 'https://www.saucedemo.com/'............passed
 When Completar campo username con usuario: 'locked_out_user'................passed
@@ -56,7 +56,7 @@ And User click button "Login"...............................................pass
 Then Se muestra mensaje de validación: 'Epic sadface: Sorry, this user has been locked out.'.passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login Test Feature" name="Login Fail: '&lt;NameTestCase&gt;' - Example #1.2" time="2.537">
+<testcase classname="Login Test Feature" name="Login Fail: '&lt;NameTestCase&gt;' - Example #1.2" time="2.637">
 <system-out><![CDATA[
 Given Abrir navegador en la página: 'https://www.saucedemo.com/'............passed
 When Completar campo username con usuario: ''...............................passed
@@ -65,7 +65,7 @@ And User click button "Login"...............................................pass
 Then Se muestra mensaje de validación: 'Epic sadface: Username is required'.passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login Test Feature" name="Login Fail: '&lt;NameTestCase&gt;' - Example #1.3" time="2.956">
+<testcase classname="Login Test Feature" name="Login Fail: '&lt;NameTestCase&gt;' - Example #1.3" time="2.586">
 <system-out><![CDATA[
 Given Abrir navegador en la página: 'https://www.saucedemo.com/'............passed
 When Completar campo username con usuario: 'standard_user'..................passed
@@ -74,7 +74,7 @@ And User click button "Login"...............................................pass
 Then Se muestra mensaje de validación: 'Epic sadface: Password is required'.passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login Test Feature" name="Login Fail: '&lt;NameTestCase&gt;' - Example #1.4" time="2.828">
+<testcase classname="Login Test Feature" name="Login Fail: '&lt;NameTestCase&gt;' - Example #1.4" time="2.423">
 <system-out><![CDATA[
 Given Abrir navegador en la página: 'https://www.saucedemo.com/'............passed
 When Completar campo username con usuario: 'user'...........................passed
@@ -83,7 +83,7 @@ And User click button "Login"...............................................pass
 Then Se muestra mensaje de validación: 'Epic sadface: Username and password do not match any user in this service'.passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login Test Feature" name="Login Fail: '&lt;NameTestCase&gt;' - Example #1.5" time="2.593">
+<testcase classname="Login Test Feature" name="Login Fail: '&lt;NameTestCase&gt;' - Example #1.5" time="2.539">
 <system-out><![CDATA[
 Given Abrir navegador en la página: 'https://www.saucedemo.com/'............passed
 When Completar campo username con usuario: 'standard_user'..................passed
@@ -92,7 +92,7 @@ And User click button "Login"...............................................pass
 Then Se muestra mensaje de validación: 'Epic sadface: Username and password do not match any user in this service'.passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login Test Feature" name="Login Fail: '&lt;NameTestCase&gt;' - Example #1.6" time="2.82">
+<testcase classname="Login Test Feature" name="Login Fail: '&lt;NameTestCase&gt;' - Example #1.6" time="2.643">
 <failure type="org.junit.ComparisonFailure" message="expected:&lt;[]Username and passwor...&gt; but was:&lt;[Epic sadface: ]Username and passwor...&gt;">
 <![CDATA[org.junit.ComparisonFailure: expected:<[]Username and passwor...> but was:<[Epic sadface: ]Username and passwor...>
 	at org.junit.Assert.assertEquals(Assert.java:117)
